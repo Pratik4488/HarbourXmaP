@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#map{
+    position: absolute;
+    float: left;
+    bottom: 0;
+    height: 90vh;
+    width: 65vw;
+}
+.posts{
+    height: 90vh;
+    width: 30vw;
+    border: 2px solid red;
+}
