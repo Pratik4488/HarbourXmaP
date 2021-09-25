@@ -1,0 +1,17 @@
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+   margin-top: 4%;
+}
+
+
+.feeds{
+    margin-left: 83%;
+    float:left;
+    width:1000px;
+    overflow-y: auto;
+    height: 90vh;
+
+}
