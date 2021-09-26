@@ -56,7 +56,6 @@ function showPopUp() {
             },
             data: formData
         }).then(function(res){
-            console.log(res);
             // imgPreview.src = res.data.secure_url;
             NewPost.img = res.data.secure_url;
         }).catch(function(err){
@@ -73,7 +72,6 @@ function showPopUp() {
     submitPost.addEventListener('click', addToPost);
     let closePost = document.getElementById("closePost");
     closePost.addEventListener('click', () => {
-        console.log("Submit Post clicked!");
         document.getElementById('feed-list').removeChild(popup);
     })
 }
@@ -102,8 +100,7 @@ function addToPost() {
     NewPost.Desc = postDesc.value;
 
     NewPost.date = date;
-    console.log(NewPost);
+
     Post.push(NewPost);
-    console.log(Post);
     document.getElementById("feed-list").removeChild(popup);
 }
