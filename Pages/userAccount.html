@@ -1,38 +1,133 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/userstyle.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <title>User Profile</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="user-details">
-        <div class="name">
-          <h1 id="name">Pratik Kumar</h1>
-          <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos id molestiae tempore dolor neque incidunt laboriosam libero tenetur quasi earum, soluta rem.</p>
-          <div class="followlist">
-            <div class="follow">Followers</div>
-            <div class="follow">Following</div>
-          </div>
+</head>
+
+<body>
+    <div class="new">
+        <div class="user-details">
+            
+                <!-- <div class=" col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6"> -->
+                    <div class="well profile">
+                       <div class="col-sm-12">
+                           <div class="col-xs-12 col-sm-8">
+                               <h2>Barenya Kumar</h2>
+                               <p><strong>Bio </strong> Roadstar </p>
+                               <p><strong>Loves to: </strong> Hang out with friends. </p>
+                           </div>             
+                           
+                       <div class="col-xs-12 divider text-center" >
+                           <div class="col-xs-12 col-sm-4 emphasis">
+                               <h2><strong> 190 </strong></h2>       
+                               <p><small>Followers</small></p>             
+                               
+                              
+                           </div>
+                           
+                         </div>
+                        </div> 
+                    </div>
+
+
+                    <div class="well profile">
+                      <div class="col-sm-12">
+                          <div class="col-xs-12 col-sm-8">
+                            <form action="/action_page.php">
+                              <label for="text-inp">Share your memory:</label>
+                              <input type="text" id="fname" name="fname"><br><br>
+                             
+                              <button onclick="myFunction()">Share</button>  
+                            </form>
+                              
+                          </div>             
+                          
+                      
+                       </div> 
+                   </div>
+                
+            
         </div>
-        <div class="about">
-          <h3>What Happend?</h3>
-          <textarea name="post-desc" id="post-desc" cols="60" rows="8"></textarea>
-          <button type="submit" id="postBtn">Post</button>
-        </div>
-        <div class="timeline"></div>
-      </div>
+
+
+
+
         <div class="post-content">
-          <h3>Posts</h3>
-            <ul class="post-list">
-                <li class="post"></li>
-                <li class="post"></li>
-                <li class="post"></li>
-                <li class="post"></li>
-            </ul>
-        </div>
-      </div>
-    </body>
-    </html>
+            <h3>Posts</h3>
+            <div class="post-list">
+                <div class="card mt-3 post">
+                    <div class="card-body">
+                    <h5 class="card-title">My Memories</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+              <div class="card mt-3 post">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card mt-3 post">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card mt-3 post">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card mt-3 post">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card mt-3 post">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card mt-3 post">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+
+
+    </div>
+
+
+    <script>
+      function myFunction() {
+        document.getElementById("card-text").innerHTML = "Hello World";
+      }
+      </script>
+      
+    
+
+</body>
+
+</html>
